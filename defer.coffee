@@ -1,3 +1,6 @@
+## deferはnodeのsetImmediateのようなもの
+## 実装は1ミリ秒後にsetTimeout
+
 _ = require 'underscore'
 
 foo = (arg) ->

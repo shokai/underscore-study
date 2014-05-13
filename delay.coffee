@@ -1,3 +1,5 @@
+## delay使わないとforループ内での変数が全部同じになる
+
 _ = require 'underscore'
 
 foo = (i) ->

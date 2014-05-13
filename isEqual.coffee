@@ -1,3 +1,5 @@
+## オブジェクトの深い比較
+
 _ = require 'underscore'
 
 foo = {a:1, b:2, c: [8,9,10]}
