@@ -1,11 +1,12 @@
-_ = require 'lodash'
+_ = require 'underscore'
 
-foo = _.throttle (num) ->
+foo = (num) ->
   console.log num
-, 100
+
+throttled_foo = _.throttle foo, 300, trailing: false
 
 for i in [0...1000]
   do (i) ->
     setTimeout ->
-      foo(i)
-    , i*10
+      throttled_foo(i)
+    , i
